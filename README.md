@@ -11,7 +11,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/lfnovo/open-notebook">
+  <a href="https://github.com/myhearwillgoon/Open-notebook-Knowledge-Base">
     <img src="docs/assets/hero.svg" alt="Logo">
   </a>
 
@@ -35,19 +35,19 @@
 </div>
 
 <p align="center">
-<a href="https://trendshift.io/repositories/14536" target="_blank"><img src="https://trendshift.io/api/badge/repositories/14536" alt="lfnovo%2Fopen-notebook | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
+<a href="https://trendshift.io/repositories/14536" target="_blank"><img src="https://trendshift.io/api/badge/repositories/14536" alt="myhearwillgoon/Open-notebook-Knowledge-Base | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
 </p>
 
 <div align="center">
   <!-- Keep these links. Translations will automatically update with the README. -->
-  <a href="https://zdoc.app/de/lfnovo/open-notebook">Deutsch</a> | 
-  <a href="https://zdoc.app/es/lfnovo/open-notebook">Español</a> | 
-  <a href="https://zdoc.app/fr/lfnovo/open-notebook">français</a> | 
-  <a href="https://zdoc.app/ja/lfnovo/open-notebook">日本語</a> | 
-  <a href="https://zdoc.app/ko/lfnovo/open-notebook">한국어</a> | 
-  <a href="https://zdoc.app/pt/lfnovo/open-notebook">Português</a> | 
-  <a href="https://zdoc.app/ru/lfnovo/open-notebook">Русский</a> | 
-  <a href="https://zdoc.app/zh/lfnovo/open-notebook">中文</a>
+  <a href="https://zdoc.app/de/myhearwillgoon/Open-notebook-Knowledge-Base">Deutsch</a> | 
+  <a href="https://zdoc.app/es/myhearwillgoon/Open-notebook-Knowledge-Base">Español</a> | 
+  <a href="https://zdoc.app/fr/myhearwillgoon/Open-notebook-Knowledge-Base">français</a> | 
+  <a href="https://zdoc.app/ja/myhearwillgoon/Open-notebook-Knowledge-Base">日本語</a> | 
+  <a href="https://zdoc.app/ko/myhearwillgoon/Open-notebook-Knowledge-Base">한국어</a> | 
+  <a href="https://zdoc.app/pt/myhearwillgoon/Open-notebook-Knowledge-Base">Português</a> | 
+  <a href="https://zdoc.app/ru/myhearwillgoon/Open-notebook-Knowledge-Base">Русский</a> | 
+  <a href="https://zdoc.app/zh/myhearwillgoon/Open-notebook-Knowledge-Base">中文</a>
 </div>
 
 ## A private, multi-model, 100% local, full-featured alternative to Notebook LM
@@ -104,7 +104,7 @@ Learn more about our project at [https://www.open-notebook.ai](https://www.open-
 
 **Option A:** Download directly
 ```bash
-curl -o docker-compose.yml https://raw.githubusercontent.com/lfnovo/open-notebook/main/docker-compose.yml
+curl -o docker-compose.yml https://raw.githubusercontent.com/myhearwillgoon/Open-notebook-Knowledge-Base/main/docker-compose.yml
 ```
 
 **Option B:** Create the file manually
@@ -155,6 +155,10 @@ docker compose up -d
 
 Wait 15-20 seconds, then open: **http://localhost:8502**
 
+> **Connection URLs:**
+> - **Web UI**: http://localhost:8502 (main application interface)
+> - **REST API**: http://localhost:5055 (programmatic access and API documentation)
+
 ### Step 4: Configure AI Provider
 1. Go to **Settings** → **API Keys**
 2. Click **Add Credential**
@@ -184,13 +188,13 @@ Done! You're ready to create your first notebook.
 - **🤖 AI Installation Assistant**: [CustomGPT to help you install](https://chatgpt.com/g/g-68776e2765b48191bd1bae3f30212631-open-notebook-installation-assistant)
 - **🆘 Troubleshooting**: [5-minute troubleshooting guide](docs/6-TROUBLESHOOTING/quick-fixes.md)
 - **💬 Community Support**: [Discord Server](https://discord.gg/37XJPXfz2w)
-- **🐛 Report Issues**: [GitHub Issues](https://github.com/lfnovo/open-notebook/issues)
+- **🐛 Report Issues**: [GitHub Issues](https://github.com/myhearwillgoon/Open-notebook-Knowledge-Base/issues)
 
 ---
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=lfnovo/open-notebook&type=date&legend=top-left)](https://www.star-history.com/#lfnovo/open-notebook&type=date&legend=top-left)
+[![Star History Chart](https://api.star-history.com/svg?repos=myhearwillgoon/Open-notebook-Knowledge-Base&type=date&legend=top-left)](https://www.star-history.com/#myhearwillgoon/Open-notebook-Knowledge-Base&type=date&legend=top-left)
 
 
 ## Provider Support Matrix
@@ -286,7 +290,7 @@ Thanks to the [Esperanto](https://github.com/lfnovo/esperanto) library, we suppo
 - **Enhanced Citations**: Improved layout and finer control for source citations
 - **Multiple Chat Sessions**: Manage different conversations within notebooks
 
-See the [open issues](https://github.com/lfnovo/open-notebook/issues) for a full list of proposed features and known issues.
+See the [open issues](https://github.com/myhearwillgoon/Open-notebook-Knowledge-Base/issues) for a full list of proposed features and known issues.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -301,7 +305,7 @@ See the [open issues](https://github.com/lfnovo/open-notebook/issues) for a full
 
 ### Join the Community
 - 💬 **[Discord Server](https://discord.gg/37XJPXfz2w)** - Get help, share ideas, and connect with other users
-- 🐛 **[GitHub Issues](https://github.com/lfnovo/open-notebook/issues)** - Report bugs and request features
+- 🐛 **[GitHub Issues](https://github.com/myhearwillgoon/Open-notebook-Knowledge-Base/issues)** - Report bugs and request features
 - ⭐ **Star this repo** - Show your support and help others discover Open Notebook
 
 ### Contributing
@@ -326,7 +330,7 @@ Open Notebook is MIT licensed. See the [LICENSE](LICENSE) file for details.
 
 **Community Support**:
 - 💬 [Discord Server](https://discord.gg/37XJPXfz2w) - Get help, share ideas, and connect with users
-- 🐛 [GitHub Issues](https://github.com/lfnovo/open-notebook/issues) - Report bugs and request features
+- 🐛 [GitHub Issues](https://github.com/myhearwillgoon/Open-notebook-Knowledge-Base/issues) - Report bugs and request features
 - 🌐 [Website](https://www.open-notebook.ai) - Learn more about the project
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -334,16 +338,16 @@ Open Notebook is MIT licensed. See the [LICENSE](LICENSE) file for details.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/lfnovo/open-notebook.svg?style=for-the-badge
-[contributors-url]: https://github.com/lfnovo/open-notebook/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/lfnovo/open-notebook.svg?style=for-the-badge
-[forks-url]: https://github.com/lfnovo/open-notebook/network/members
-[stars-shield]: https://img.shields.io/github/stars/lfnovo/open-notebook.svg?style=for-the-badge
-[stars-url]: https://github.com/lfnovo/open-notebook/stargazers
-[issues-shield]: https://img.shields.io/github/issues/lfnovo/open-notebook.svg?style=for-the-badge
-[issues-url]: https://github.com/lfnovo/open-notebook/issues
-[license-shield]: https://img.shields.io/github/license/lfnovo/open-notebook.svg?style=for-the-badge
-[license-url]: https://github.com/lfnovo/open-notebook/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/myhearwillgoon/Open-notebook-Knowledge-Base.svg?style=for-the-badge
+[contributors-url]: https://github.com/myhearwillgoon/Open-notebook-Knowledge-Base/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/myhearwillgoon/Open-notebook-Knowledge-Base.svg?style=for-the-badge
+[forks-url]: https://github.com/myhearwillgoon/Open-notebook-Knowledge-Base/network/members
+[stars-shield]: https://img.shields.io/github/stars/myhearwillgoon/Open-notebook-Knowledge-Base.svg?style=for-the-badge
+[stars-url]: https://github.com/myhearwillgoon/Open-notebook-Knowledge-Base/stargazers
+[issues-shield]: https://img.shields.io/github/issues/myhearwillgoon/Open-notebook-Knowledge-Base.svg?style=for-the-badge
+[issues-url]: https://github.com/myhearwillgoon/Open-notebook-Knowledge-Base/issues
+[license-shield]: https://img.shields.io/github/license/myhearwillgoon/Open-notebook-Knowledge-Base.svg?style=for-the-badge
+[license-url]: https://github.com/myhearwillgoon/Open-notebook-Knowledge-Base/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/lfnovo
 [product-screenshot]: images/screenshot.png

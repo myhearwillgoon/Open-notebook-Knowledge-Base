@@ -10,7 +10,7 @@ services:
     environment:
       - SURREAL_EXPERIMENTAL_GRAPHQL=true
     restart: always
-    pull_policy: always
+    pull_policy: never
 
   open_notebook:
     image: lfnovo/open_notebook:v1-latest
@@ -20,7 +20,7 @@ services:
     environment:
       # REQUIRED: Change this to your own secret string
       # This encrypts your API keys in the database
-      - OPEN_NOTEBOOK_ENCRYPTION_KEY=change-me-to-a-secret-string
+      - OPEN_NOTEBOOK_ENCRYPTION_KEY=${OPEN_NOTEBOOK_ENCRYPTION_KEY:-change-me-to-a-secret-string}
 
       # Database connection (default values - no need to change)
       - SURREAL_URL=ws://surrealdb:8000/rpc
@@ -28,9 +28,13 @@ services:
       - SURREAL_PASSWORD=root
       - SURREAL_NAMESPACE=open_notebook
       - SURREAL_DATABASE=open_notebook
+      
+      # AI Provider API Keys (from .env)
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - OPENAI_BASE_URL=${OPENAI_BASE_URL:-}
     volumes:
       - ./notebook_data:/app/data
     depends_on:
       - surrealdb
     restart: always
-    pull_policy: always
+    pull_policy: never
