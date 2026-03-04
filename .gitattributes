@@ -1,0 +1,5 @@
+# Ensure shell scripts use LF (required for Docker/Linux)
+*.sh text eol=lf
+
+# PowerShell scripts - CRLF is OK on Windows
+# *.ps1 text eol=crlf

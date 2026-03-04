@@ -177,6 +177,7 @@ Done! You're ready to create your first notebook.
 
 ### 📚 More Installation Options
 
+- **[Run on Another Computer](docs/1-INSTALLATION/run-from-zero.md)** - From-zero startup script for new machines
 - **[With Ollama (Free Local AI)](examples/docker-compose-ollama.yml)** - Run models locally without API costs
 - **[From Source (Developers)](docs/1-INSTALLATION/from-source.md)** - For development and contributions
 - **[Complete Installation Guide](docs/1-INSTALLATION/index.md)** - All deployment scenarios
