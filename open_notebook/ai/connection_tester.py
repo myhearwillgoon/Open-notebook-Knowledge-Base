@@ -311,9 +311,11 @@ DEFAULT_TEST_VOICES = {
 
 
 def _generate_test_wav() -> io.BytesIO:
-    """Generate a minimal 0.5s silence WAV file in memory (16kHz, 16-bit mono)."""
+    """Generate a minimal 0.1s silence WAV file in memory (16kHz, 16-bit mono).
+    Kept under ~3.2KB to avoid 'bufio: buffer full' on Go-based OpenAI-compatible
+    STT gateways (e.g. Dify) that use a 4KB peek buffer for multipart parsing."""
     sample_rate = 16000
-    num_samples = sample_rate // 2  # 0.5 seconds
+    num_samples = int(sample_rate * 0.1)  # 0.1 seconds (~3.2KB total)
     bits_per_sample = 16
     num_channels = 1
     byte_rate = sample_rate * num_channels * bits_per_sample // 8
@@ -360,6 +362,13 @@ def _normalize_error_message(error_msg: str) -> Tuple[bool, str]:
         return False, "Connection error - check network/endpoint"
     elif "timeout" in lower:
         return False, "Connection timed out - check network/endpoint"
+    elif "bufio" in lower and "buffer full" in lower:
+        return False, (
+            "STT gateway multipart buffer overflow. Your OpenAI-compatible STT endpoint "
+            "(e.g. Dify) may use Go with a 4KB peek buffer. Try: (1) use native STT provider "
+            "(OpenAI, Google) instead of openai_compatible, or (2) contact gateway vendor "
+            "for buffer size increase."
+        )
 
     return False, error_msg
 
